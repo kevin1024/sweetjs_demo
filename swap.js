@@ -1,6 +1,6 @@
 macro swap {
   rule {
-    ($x, $y)
+    $x, $y
   } => {
     var tmp = $x;
     $y = $x;
@@ -8,8 +8,9 @@ macro swap {
   }
 }
 
+
+var tmp ='tmp is not clobbered';
 var foo = 100;
 var bar = 200;
-var tmp = 'my other temporary variable';
 
-swap (foo, bar)
+swap foo,bar

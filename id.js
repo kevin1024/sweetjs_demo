@@ -12,3 +12,4 @@ macro id {
 }
 
 id('abc');
+console.log(id('abc'));
